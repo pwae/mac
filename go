@@ -1,9 +1,11 @@
+#!/bin/bash
 # Entry point for setup
+
+xcode-select --install
 
 mkdir ~/.provision
 cd ~/.provision
-curl -o scripts.zip https://codeload.github.com/pwae/mac/zip/main 
-unzip scripts.zip
-cd mac-main/
-chmod +x run
-./run
+git clone https://github.com/pwae/mac git
+cd git
+chmod +x scripts/run
+./scripts/run
