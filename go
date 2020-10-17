@@ -5,7 +5,7 @@
 touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress;
 PROD=$(softwareupdate -l |
   grep -B 1 -E 'Command Line Tools' |
-  awk -F'*' '/^ *\\*/ {print \$2}' |
+  awk -F'*' '/^ *\\*/ {print $2}' |
   sed -e 's/^ *Label: //' -e 's/^ *//' |
   sort -V |
   tr -d '\n')
