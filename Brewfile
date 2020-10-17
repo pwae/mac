@@ -1,0 +1,128 @@
+## ---
+## Taps!
+## ---
+
+# Homebrew own taps
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/bundle'
+tap 'homebrew/cask-versions'
+tap 'homebrew/cask-drivers'
+
+# 3rd party taps (with notes about what they are for)
+# Microsoft ODBC Drivers
+tap 'microsoft/mssql-release'
+
+## ---
+## Brew packages :-)
+## ---
+
+brew '1password-cli'
+brew 'awscli'
+brew 'cdrtools'
+brew 'cowsay'
+brew 'diff-so-fancy'
+brew 'figlet'
+brew 'fish'
+brew 'git'
+brew 'git-lfs'
+brew 'htop'
+brew 'jq'
+brew 'mas'
+brew 'mosh'
+brew 'pyenv'
+brew 'q'
+brew 'redis'
+brew 'telnet'
+brew 'terminal-notifier'
+brew 'wget'
+brew 'youtube-dl'
+
+# MS Stuff
+brew 'msodbcsql'
+brew 'msodbcsql17'
+brew 'msodbcsql@13.1.9.2'
+brew 'mssql-tools'
+brew 'mssql-tools@14.0.6.0'
+
+
+## ---
+## Casks!
+## --- 
+
+# Important apps
+cask '1password-beta'
+cask 'backblaze'
+cask 'little-snitch'
+cask 'micro-snitch'
+
+# Fonts (for terminals, etc)
+cask 'font-inconsolata'
+cask 'font-menlo-for-powerline'
+
+# JetBrains
+cask 'android-studio'
+cask 'appcode'
+cask 'datagrip'
+cask 'pycharm'
+
+# Coding/Work related
+cask 'adobe-creative-cloud'
+cask 'adobe-acrobat-pro'
+cask 'dash'
+cask 'ngrok'
+cask 'postman'
+cask 'robo-3t'
+cask 'studio-3t'
+cask 'royal-tsx-beta'
+
+# Common Programs
+cask 'alfred'
+cask 'authy'
+cask 'balenaetcher'
+cask 'brother-p-touch-update-software'
+cask 'discord'
+cask 'dropshare'
+cask 'expressvpn'
+cask 'firefox-nightly'
+cask 'franz'
+cask 'gitkraken'
+cask 'google-backup-and-sync'
+cask 'google-chrome-dev'
+cask 'google-featured-photos'
+cask 'istat-menus'
+cask 'iterm2'
+cask 'kaleidoscope'
+cask 'microsoft-office'
+cask 'notion'
+cask 'setapp'
+cask 'slack'
+cask 'sonos'
+cask 'steelseries-engine'
+cask 'sublime-text'
+cask 'transmit'
+cask 'ultimaker-cura'
+cask 'visual-studio-code-insiders'
+cask 'vlc'
+cask 'zoomus'
+cask 'zoomus-outlook-plugin'
+
+# ---
+# Setapp
+# ---
+
+# Shimo
+# Ulysses
+# Proxyman
+
+# Filemaker Pro 17 advanced
+
+## ---
+## Mac App Store
+## ---
+
+mas 'Spark', id: 1176895641
+mas 'The Clock', id: 488764545
+mas 'XCode', id: 497799835
+mas 'Pastebot', id: 1179623856
+mas 'Pixelmator', id: 407963104 
