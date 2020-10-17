@@ -8,6 +8,7 @@ PROD=$(softwareupdate -l |
   awk -F'*' '/^ *\\*/ {print $2}' |
   sed -e 's/^ *Label: //' -e 's/^ *//' |
   sort -V |
+  tail -n1 |
   tr -d '\n')
 softwareupdate -i "$PROD";
 
