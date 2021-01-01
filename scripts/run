@@ -15,13 +15,13 @@ brew update
 echo "Install mackup and set up config"
 brew install mackup
 
-if test -f "$FILE"; then
-    echo "$FILE already exists."
+if test -f "HOME/.mackup.cfg"; then
+    echo "$HOME/.mackup.cfg already exists."
 else
-cat <<EOF
+cat <<EOF > $HOME/.mackup.cfg
 [storage]
 engine = icloud
-EOF > $HOME/.mackup.cfg
+EOF
 fi
 
 echo "Install Homebrew Packages"
