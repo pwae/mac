@@ -16,13 +16,11 @@ tap 'theseal/ssh-askpass'
 ## Brew packages :-)
 ## ---
 
-brew '1password-cli'
 brew 'awscli'
 brew 'cdrtools'
 brew 'cowsay'
 brew 'diff-so-fancy'
 brew 'figlet'
-brew 'fish'
 brew 'git'
 brew 'git-lfs'
 brew 'htop'
@@ -46,6 +44,7 @@ brew 'ssh-askpass'
 
 # Important apps
 cask '1password-beta'
+cask '1password-cli'
 cask 'backblaze'
 cask 'little-snitch'
 cask 'micro-snitch'
@@ -68,7 +67,7 @@ cask 'ngrok'
 cask 'postman'
 cask 'robo-3t'
 cask 'studio-3t'
-cask 'royal-tsx-beta'
+cask 'royal-tsx'
 
 # Common Programs
 cask 'alfred'
