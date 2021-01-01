@@ -9,10 +9,6 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/cask-drivers'
 
-# 3rd party taps (with notes about what they are for)
-# Microsoft ODBC Drivers
-tap 'microsoft/mssql-release'
-
 # SSH AskPass
 tap 'theseal/ssh-askpass'
 
@@ -40,13 +36,6 @@ brew 'telnet'
 brew 'terminal-notifier'
 brew 'wget'
 brew 'youtube-dl'
-
-# MS Stuff
-brew 'msodbcsql'
-brew 'msodbcsql17'
-brew 'msodbcsql@13.1.9.2'
-brew 'mssql-tools'
-brew 'mssql-tools@14.0.6.0'
 
 brew ssh-askpass
 
@@ -110,7 +99,6 @@ cask 'ultimaker-cura'
 cask 'visual-studio-code-insiders'
 cask 'vlc'
 cask 'zoomus'
-cask 'zoomus-outlook-plugin'
 
 # ---
 # Setapp
