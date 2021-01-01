@@ -2,6 +2,9 @@
 
 # Entry point for the install scripts
 
+echo "Asking for you to authenticate to sudo"
+sudo -l >/dev/null
+
 echo "Installing Homebrew"
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
