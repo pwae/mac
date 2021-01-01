@@ -19,8 +19,13 @@ fi
 
 mkdir ~/.provision
 cd ~/.provision
-git clone https://github.com/pwae/mac git
-cd git
-chmod +x scripts/run
+if test -d git; then
+  pushd git
+  git pull
+else
+  git clone https://github.com/pwae/mac git
+  pushd git
+fi
+
 ./scripts/run
 

@@ -18,10 +18,7 @@ brew install mackup
 if test -f "HOME/.mackup.cfg"; then
     echo "$HOME/.mackup.cfg already exists."
 else
-cat <<EOF > $HOME/.mackup.cfg
-[storage]
-engine = icloud
-EOF
+  printf "[storage]\nengine = icloud\n" > $HOME/.mackup.cfg
 fi
 
 echo "Install Homebrew Packages"
