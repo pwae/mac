@@ -9,11 +9,17 @@ fi
 brew update
 
 # Install mackup first
+echo "Install mackup and set up config"
 brew install mackup
+
+if test -f "$FILE"; then
+    echo "$FILE already exists."
+else
 cat <<EOF
 [storage]
 engine = icloud
 EOF > $HOME/.mackup.cfg
+fi
 
 echo "Install Homebrew Packages"
 brew tap homebrew/bundle
