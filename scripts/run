@@ -2,11 +2,25 @@
 
 # Entry point for the install scripts
 
+if test ! -f "$HOME/.provision/hostname"; then
+  echo "What would you like the hostname for your mac to be?"
+  echo -n "Hostname: "
+  read _hostname
+  sudo scutil --set HostName $_hostname
+  sudo scutil --set LocalHostName $_hostname
+  sudo scutil --set ComputerName $_hostname
+  dscacheutil -flushcache
+  
+  echo $_hostname > $HOME/.provision/hostname
+fi
+
 echo "Asking for you to authenticate to sudo"
 sudo -l >/dev/null
 
-echo "Installing Homebrew"
+sudo xcodebuild -license accept
+
 if test ! $(which brew); then
+  echo "Installing Homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 brew update
@@ -15,7 +29,7 @@ brew update
 echo "Install mackup and set up config"
 brew install mackup
 
-if test -f "HOME/.mackup.cfg"; then
+if test -f "$HOME/.mackup.cfg"; then
     echo "$HOME/.mackup.cfg already exists."
 else
   printf "[storage]\nengine = icloud\n" > $HOME/.mackup.cfg
