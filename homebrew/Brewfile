@@ -37,7 +37,7 @@ brew 'terminal-notifier'
 brew 'wget'
 brew 'youtube-dl'
 
-brew ssh-askpass
+brew 'ssh-askpass'
 
 
 ## ---
