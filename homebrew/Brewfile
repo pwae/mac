@@ -3,15 +3,18 @@
 ## ---
 
 # Homebrew own taps
+# tap 'homebrew/bundle' # Added from the 'run' script
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
-# tap 'homebrew/bundle' # Added from the 'run' script
 tap 'homebrew/cask-versions'
 tap 'homebrew/cask-drivers'
 
 # 3rd party taps (with notes about what they are for)
 # Microsoft ODBC Drivers
 tap 'microsoft/mssql-release'
+
+# SSH AskPass
+tap 'theseal/ssh-askpass'
 
 ## ---
 ## Brew packages :-)
@@ -44,6 +47,8 @@ brew 'msodbcsql17'
 brew 'msodbcsql@13.1.9.2'
 brew 'mssql-tools'
 brew 'mssql-tools@14.0.6.0'
+
+brew ssh-askpass
 
 
 ## ---
@@ -125,4 +130,4 @@ mas 'Spark', id: 1176895641
 mas 'The Clock', id: 488764545
 mas 'XCode', id: 497799835
 mas 'Pastebot', id: 1179623856
-mas 'Pixelmator', id: 407963104 
+mas 'Pixelmator Pro', id: 1289583905 
