@@ -5,12 +5,12 @@
 if test ! -f "$HOME/.provision/hostname"; then
   echo "What would you like the hostname for your mac to be?"
   echo -n "Hostname: "
-  read _hostname
+  read _hostname <&1
   sudo scutil --set HostName $_hostname
   sudo scutil --set LocalHostName $_hostname
   sudo scutil --set ComputerName $_hostname
   dscacheutil -flushcache
-  
+
   echo $_hostname > $HOME/.provision/hostname
 fi
 
