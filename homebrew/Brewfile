@@ -62,7 +62,6 @@ cask 'pycharm'
 # Coding/Work related
 cask 'adobe-creative-cloud'
 cask 'adobe-acrobat-pro'
-cask 'dash'
 cask 'ngrok'
 cask 'postman'
 cask 'robo-3t'

@@ -22,8 +22,14 @@ sudo xcodebuild -license accept
 if test ! $(which brew); then
   echo "Installing Homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  brew doctor
+  brew update
+else
+  brew doctor
+  brew update
+  brew upgrade
+  mas upgrade
 fi
-brew update
 
 # Install mackup first
 echo "Install mackup and set up config"
@@ -35,8 +41,15 @@ else
   printf "[storage]\nengine = icloud\n" > $HOME/.mackup.cfg
 fi
 
+# Before anything, install Oh My ZSH
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+mackup restore
+
 echo "Install Homebrew Packages"
 brew tap homebrew/bundle
 pushd homebrew
 brew bundle
 popd
+
+brew cleanup

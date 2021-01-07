@@ -16,4 +16,9 @@ curl -fsSL https://git.io/pwaego | bash
   * Click OK as they appear at times
 * Enable SteelSeries Engine Module
   * On your Mac, try checking System Preferences > Security & Privacy > Privacy > Input Monitoring > add permission for SteelSeries Engine
-* 
+* Install SetApp applications
+  * Shimo
+  * Proxyman
+  * Ulysses
+* Alfred Powerpack details enter in manually
+* Log into Authy Desktop
