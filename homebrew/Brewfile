@@ -32,10 +32,14 @@ brew 'q'
 brew 'redis'
 brew 'telnet'
 brew 'terminal-notifier'
+brew 'unixodbc'
 brew 'wget'
 brew 'youtube-dl'
 
 brew 'ssh-askpass'
+
+# Services for dev
+brew 'mysql'
 
 
 ## ---
