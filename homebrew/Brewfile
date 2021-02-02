@@ -8,6 +8,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/cask-drivers'
+tap 'microsoft/mssql-release'
 
 # SSH AskPass
 tap 'theseal/ssh-askpass'
@@ -105,6 +106,13 @@ cask 'visual-studio-code-insiders'
 cask 'vlc'
 cask 'wechat'
 cask 'zoomus'
+
+
+# Microsoft tap
+brew 'msodbcsql17'
+brew 'mssql-tools'
+brew 'msodbcsql@13.1.9.2'
+brew 'mssql-tools@14.0.6.0'
 
 # ---
 # Setapp
