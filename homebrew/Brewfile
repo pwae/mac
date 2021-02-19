@@ -68,11 +68,13 @@ cask 'pycharm'
 # Coding/Work related
 cask 'adobe-creative-cloud'
 cask 'adobe-acrobat-pro'
+cask 'docker'
 cask 'ngrok'
 cask 'postman'
 cask 'robo-3t'
 cask 'studio-3t'
 cask 'royal-tsx'
+cask 'amazon-chime'
 
 # Common Programs
 cask 'alfred'
